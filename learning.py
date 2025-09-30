@@ -76,7 +76,6 @@ def create_record(size):
         if not pair_exists:
             return (field_history, operation_history)
 
-
 size = 0
 while size < 4 or size > 24 or size % 2 == 1:
     input_string = input("棋譜のサイズ(4~24の偶数)? ")
@@ -96,7 +95,6 @@ while generation_count == 0:
     input_string = input("棋譜の生成回数? ")
     if input_string.isdigit():
         generation_count = int(input_string)
-
 
 while generation_count > 0:
     print(f"残り{generation_count}回")
